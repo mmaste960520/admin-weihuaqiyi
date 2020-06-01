@@ -1,0 +1,412 @@
+{
+    "user": {
+        "item": [{
+                "type": "text",
+                "name": "userName",
+                "value": "",
+                "placeholder": "请输入用户名",
+                "width": "100%",
+                "label": "用户名",
+                "show": true
+            },
+            {
+                "type": "text",
+                "name": "phone",
+                "value": "",
+                "placeholder": "请输入电话号码",
+                "label": "电话",
+                "width": "100%",
+                "show": true
+            },
+            {
+                "type": "select",
+                "name": "role",
+                "cname": "role",
+                "value": "",
+                "placeholder": "请选择用户类型",
+                "filterable": true,
+                "width": "100%",
+                "label": "用户类型:",
+                "show": true,
+                "options": [{
+                    "value": "全部",
+                    "label": ""
+                }]
+            }, {
+                "type": "select",
+                "name": "deviceType",
+                "cname": "deviceType",
+                "value": "",
+                "placeholder": "请选择用户来源",
+                "filterable": true,
+                "width": "100%",
+                "label": "用户来源:",
+                "show": true,
+                "options": [{
+                    "value": "全部",
+                    "label": ""
+                }]
+            }
+        ],
+        "data": {
+            "userName": "",
+            "phone": "",
+            "role": "",
+            "deviceType": ""
+        }
+    },
+    "role": {
+        "item": [{
+            "type": "text",
+            "name": "name",
+            "value": "",
+            "placeholder": "请输入角色名称",
+            "width": "100%",
+            "show": true
+        }],
+        "data": {
+            "name": ""
+        }
+    },
+    "knowledge": {
+        "item": [{
+            "type": "text",
+            "name": "name",
+            "value": "",
+            "placeholder": "请输入题库名称",
+            "label": "题库名",
+            "width": "100%",
+            "show": true
+        }, {
+            "type": "date",
+            "name": "createTime",
+            "placeholder": "创建日期",
+            "value": "",
+            "width": "100%",
+            "label": "创建日期",
+            "show": true,
+            "format": "yyyy-MM-dd",
+            "rules": [{
+                "required": true,
+                "message": "创建日期",
+                "trigger": "blur"
+            }]
+        }],
+        "data": {
+            "name": "",
+            "createTime": ""
+        }
+    },
+    "visitMessage": {
+        "item": [{
+            "type": "text",
+            "name": "userName",
+            "value": "",
+            "placeholder": "请输入用户",
+            "label": "用户",
+            "width": "100%",
+            "show": true
+        }, {
+            "type": "date",
+            "name": "createTime",
+            "placeholder": "创建日期",
+            "value": "",
+            "width": "100%",
+            "label": "创建日期:",
+            "show": true,
+            "format": "yyyy-MM-dd",
+            "rules": [{
+                "required": true,
+                "message": "创建日期",
+                "trigger": "blur"
+            }]
+        }],
+        "data": {
+            "userName": "",
+            "signTime": "",
+            "createTime": ""
+        }
+    },
+    "SinIn": {
+        "item": [{
+            "type": "text",
+            "name": "userName",
+            "value": "",
+            "placeholder": "请输入用户",
+            "label": "用户",
+            "width": "100%",
+            "show": true
+        }, {
+            "type": "date",
+            "name": "signTime",
+            "placeholder": "签到日期",
+            "value": "",
+            "width": "100%",
+            "label": "签到日期",
+            "show": true,
+            "format": "yyyy-MM-dd"
+        }],
+        "data": {
+            "userName": "",
+            "signTime": ""
+        }
+    },
+    "convenienceSearch": {
+        "item": [{
+            "type": "text",
+            "name": "scenicSpotName",
+            "value": "",
+            "placeholder": "请输入景区名称",
+            "label": "景区名称",
+            "width": "100%",
+            "show": true
+        }, {
+            "type": "text",
+            "name": "ticketPrice",
+            "value": "",
+            "placeholder": "请输入门票价格",
+            "label": "门票价格",
+            "width": "100%",
+            "show": true
+        }, {
+            "type": "text",
+            "name": "openTime",
+            "value": "",
+            "placeholder": "请输入开放时间",
+            "label": "开放时间",
+            "width": "100%",
+            "show": true
+        }, {
+            "type": "text",
+            "name": "busRoute",
+            "value": "",
+            "placeholder": "请输入公交路线",
+            "label": "公交路线",
+            "width": "100%",
+            "show": true
+        }],
+        "data": {
+            "scenicSpotName": "",
+            "ticketPrice": "",
+            "openTime": "",
+            "busRoute": ""
+        }
+    },
+    "culturalEducation": {
+        "item": [{
+            "type": "text",
+            "name": "title",
+            "value": "",
+            "placeholder": "请输入标题",
+            "label": "标题",
+            "width": "100%",
+            "show": true
+        }, {
+            "type": "text",
+            "name": "content",
+            "value": "",
+            "placeholder": "请输入内容",
+            "label": "内容",
+            "width": "100%",
+            "show": true
+        }, {
+            "type": "text",
+            "name": "author",
+            "value": "",
+            "placeholder": "请输入作者",
+            "label": "作者",
+            "width": "100%",
+            "show": true
+        }],
+        "data": {
+            "title": "",
+            "content": "",
+            "author": ""
+        }
+    },
+    "redEducation": {
+        "item": [{
+            "type": "text",
+            "name": "title",
+            "value": "",
+            "placeholder": "请输入标题",
+            "label": "标题",
+            "width": "100%",
+            "show": true
+        }, {
+            "type": "text",
+            "name": "description",
+            "value": "",
+            "placeholder": "请输入描述",
+            "label": "描述",
+            "width": "100%",
+            "show": true
+        }, {
+            "type": "date",
+            "name": "start",
+            "placeholder": "起始日期",
+            "value": "",
+            "width": "100%",
+            "label": "起始日期:",
+            "show": true,
+            "format": "yyyy-MM-dd"
+        }, {
+            "type": "date",
+            "name": "end",
+            "placeholder": "终止日期",
+            "value": "",
+            "width": "100%",
+            "label": "终止日期:",
+            "show": true,
+            "format": "yyyy-MM-dd"
+        }],
+        "data": {
+            "title": "",
+            "content": "",
+            "description": "",
+            "start": "",
+            "end": ""
+        }
+    },
+    "huaHall": {
+        "item": [{
+                "type": "text",
+                "name": "title",
+                "value": "",
+                "placeholder": "请输入标题",
+                "label": "标题名称",
+                "width": "100%",
+                "show": true
+            },
+            {
+                "type": "text",
+                "name": "description",
+                "value": "",
+                "placeholder": "请输入描述",
+                "width": "100%",
+                "label": "描述",
+                "show": true
+            },
+            {
+                "type": "date",
+                "name": "createTime",
+                "placeholder": "创建日期",
+                "value": "",
+                "width": "100%",
+                "label": "创建日期:",
+                "show": true,
+                "format": "yyyy-MM-dd",
+                "rules": [{
+                    "required": true,
+                    "message": "创建日期",
+                    "trigger": "blur"
+                }]
+            }
+        ],
+        "data": {
+            "title": "",
+            "content": "",
+            "createTime": ""
+        }
+    },
+    "link": {
+        "item": [{
+                "type": "text",
+                "name": "linkName",
+                "value": "",
+                "placeholder": "请输入链接名称",
+                "label": "链接名称",
+                "width": "100%",
+                "show": true
+            },
+            {
+                "type": "text",
+                "name": "linkUrl",
+                "value": "",
+                "placeholder": "请输入链接地址",
+                "width": "100%",
+                "label": "链接地址",
+                "show": true
+            },
+            {
+                "type": "date",
+                "name": "updateTime",
+                "placeholder": "上传日期",
+                "value": "",
+                "width": "100%",
+                "label": "上传日期:",
+                "show": true,
+                "format": "yyyy-MM-dd",
+                "rules": [{
+                    "required": true,
+                    "message": "上传日期",
+                    "trigger": "blur"
+                }]
+            }
+        ],
+        "data": {
+            "linkName": "",
+            "linkUrl": "",
+            "updateTime": ""
+        }
+    },
+    "file": {
+        "item": [{
+            "type": "text",
+            "name": "fname",
+            "value": "",
+            "placeholder": "请输入文件名称",
+            "width": "100%",
+            "show": true
+        }],
+        "data": {
+            "fname": ""
+        }
+    },
+    "log": {
+        "item": [{
+                "type": "text",
+                "name": "acount",
+                "value": "",
+                "placeholder": "请输入登录账号",
+                "label": "登录账号",
+                "width": "100%",
+                "show": true
+            },
+            {
+                "type": "text",
+                "name": "rightLevel",
+                "value": "",
+                "placeholder": "请输入权限等级",
+                "width": "100%",
+                "label": "权限等级",
+                "show": true
+            },
+            {
+                "type": "text",
+                "name": "userName",
+                "value": "",
+                "placeholder": "请输入操作人",
+                "label": "操作人",
+                "width": "100%",
+                "show": true
+            },
+            {
+                "type": "date",
+                "name": "operateTime",
+                "placeholder": "请选择",
+                "value": "",
+                "width": "100%",
+                "label": "操作日期:",
+                "show": true,
+                "format": "yyyy-MM-dd"
+            }
+        ],
+        "data": {
+            "acount": "",
+            "rightLevel": "",
+            "userName": "",
+            "operateTime": ""
+        }
+    }
+}

@@ -1,0 +1,170 @@
+body,
+div,
+p,
+ul,
+ol,
+li,
+dl,
+dt,
+dd,
+table,
+tr,
+td,
+form,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+fieldset,
+img,
+input {
+    margin: 0;
+    padding: 0;
+}
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 26.67vw;
+    background: #fff;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    display: block;
+}
+
+a {
+    margin: 0;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.tp {
+    width: 100%;
+    height: 100%;
+}
+
+.hw_box {
+    width: 100%;
+    height: 100%;
+}
+
+
+/*所有页面的内容盒子*/
+
+#tp_content {
+    color: #333333;
+    font-size: 0.14rem;
+    line-height: 0.3rem;
+    overflow: hidden;
+    width: 100%;
+}
+
+
+/*轮播图的样式*/
+
+.hw_swiper_oneui .mint-swipe .mint-swipe-indicators {
+    bottom: -0.37rem;
+}
+
+.hw_swiper_oneui .mint-swipe-indicator.is-active {
+    background: #f84740;
+}
+
+.hw_swiper_oneui .mint-swipe-indicator {
+    opacity: 1;
+    background: #b8b8b8;
+}
+
+.hw_swiper_oneui .mint-swipe {
+    overflow: visible;
+}
+
+
+/*文化遗产详情轮播图样式*/
+
+.hw_swiper_twoui .mint-swipe-indicator.is-active {
+    background: #c58440;
+}
+
+.hw_swiper_twoui .mint-swipe-indicator {
+    opacity: 1;
+    background: #9598a1;
+}
+
+.hw_swiper_twoui .mint-swipe {
+    overflow: visible;
+}
+
+
+/*丰功伟绩-选项卡的mintui样式修改*/
+
+.hw_box .hw_TheFeats .mint-tab-item {
+    background: #e7d7bd;
+    color: #905223;
+    width: 1.49rem;
+    height: 0.39rem;
+    border-radius: 0.02rem;
+    padding: 0;
+    line-height: 0.39rem;
+    margin: 0.11rem 0.06rem;
+}
+
+.hw_TheFeats .mint-navbar {
+    background: none;
+}
+
+.hw_TheFeats .mint-navbar .mint-tab-item.is-selected {
+    background: #905223;
+    color: #e7d7bd;
+    border: none;
+    margin-bottom: 0;
+}
+
+.picker-item.picker-selected {
+    color: red !important;
+}
+
+.mint-indicator-wrapper {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.mint-indicator-spin {
+    padding-top: 50% !important;
+}
+
+.mint-spinner-fading-circle {
+    width: 0.7rem !important;
+    height: 0.7rem !important;
+}
+
+.hw_the_feats .hw_TheFeats .mint-tab-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* 参观留言-留言上传图片样式 */
+
+.z_addImg {
+    float: left;
+    margin-right: 0.15rem;
+}
+
+.hw_touxiang .z_addImg {
+    display: none;
+}

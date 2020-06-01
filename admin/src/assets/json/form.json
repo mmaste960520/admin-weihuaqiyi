@@ -1,0 +1,607 @@
+{
+    "user": {
+        "item": [{
+                "type": "radioGroup",
+                "name": "sex",
+                "placeholder": "性别",
+                "width": "100",
+                "label": "性别:",
+                "show": true,
+                "value": [],
+                "options": [{
+                    "id": "",
+                    "value": "1",
+                    "label": "男",
+                    "name": "1"
+                }, {
+                    "id": "",
+                    "value": "2",
+                    "label": "女",
+                    "name": "2"
+                }]
+            }, {
+                "type": "text",
+                "name": "userName",
+                "value": "",
+                "placeholder": "请输入用户名",
+                "width": "100%",
+                "label": "用户名:",
+                "show": true,
+                "rules": [{
+                    "required": true,
+                    "message": "请输入用户名",
+                    "trigger": "blur"
+                }]
+            },
+            {
+                "type": "text",
+                "name": "passwd",
+                "value": "",
+                "placeholder": "请输入密码",
+                "width": "100%",
+                "label": "用户密码:",
+                "show": true,
+                "rules": [{
+                    "required": true,
+                    "message": "请输入密码",
+                    "trigger": "blur"
+                }, {
+                    "min": 6,
+                    "message": "密码长度不能小于6位",
+                    "trigger": "change"
+                }, {
+                    "min": 6,
+                    "message": "密码长度不能小于6位",
+                    "trigger": "blur"
+                }]
+            }, {
+                "type": "select",
+                "name": "role",
+                "cname": "role",
+                "value": "",
+                "placeholder": "请选择角色",
+                "filterable": true,
+                "width": "100%",
+                "label": "角色授权:",
+                "show": true,
+                "options": [{
+                    "value": "全部",
+                    "label": ""
+                }],
+                "rules": [{
+                    "required": true,
+                    "message": "请选择角色",
+                    "trigger": "blur"
+                }]
+            },
+            {
+                "type": "text",
+                "name": "phone",
+                "value": "",
+                "placeholder": "请输入电话",
+                "width": "100%",
+                "label": "用户电话:",
+                "show": true,
+                "rules": []
+            }, {
+                "type": "text",
+                "name": "email",
+                "value": "",
+                "placeholder": "请输email地址",
+                "width": "100%",
+                "label": "用户邮箱:",
+                "show": true,
+                "rules": [{
+                    "required": false,
+                    "message": "请输入邮箱",
+                    "trigger": "blur"
+                }]
+            }
+        ],
+        "data": {
+            "id": "",
+            "rolename": "",
+            "roleid": "",
+            "role": "",
+            "userName": "",
+            "sex": "男",
+            "passwd": "",
+            "phone": "",
+            "email": "",
+            "imgPath": ""
+        }
+    },
+    "pass": {
+        "item": [{
+            "type": "text",
+            "name": "loginpwd",
+            "value": "",
+            "placeholder": "请输入密码",
+            "width": "100%",
+            "label": "密码:",
+            "show": true,
+            "rules": [{
+                "required": true,
+                "message": "请输入密码",
+                "trigger": "blur"
+            }, {
+                "min": 6,
+                "message": "密码长度不能小于6位",
+                "trigger": "change"
+            }, {
+                "min": 6,
+                "message": "密码长度不能小于6位",
+                "trigger": "blur"
+            }]
+        }],
+        "data": {
+            "loginpwd": ""
+        }
+    },
+    "userAndRoles": {
+        "item": [{
+                "type": "text",
+                "name": "userName",
+                "value": "",
+                "width": "80",
+                "disabled": true,
+                "label": "用户名:",
+                "show": true
+            },
+            {
+                "type": "checkbox",
+                "name": "roleids",
+                "label": "角色:",
+                "show": true,
+                "value": [],
+                "options": []
+            }
+        ],
+        "data": {
+            "userName": "",
+            "userId": "",
+            "roleids": []
+        }
+    },
+    "menu": {
+        "item": [{
+                "type": "text",
+                "name": "title",
+                "value": "",
+                "label": "菜单名称:",
+                "show": true
+            },
+            {
+                "type": "uiIcons",
+                "name": "icon",
+                "value": "",
+                "label": "菜单图标:",
+                "show": true
+            },
+            {
+                "type": "inputNum",
+                "name": "sortnum",
+                "value": "",
+                "label": "菜单序号:",
+                "min": 1,
+                "max": 50,
+                "step": 1,
+                "precision": 0,
+                "show": true
+            },
+            {
+                "type": "text",
+                "name": "parentid",
+                "value": "0",
+                "label": "父菜单id",
+                "disabled": true,
+                "show": true
+            },
+            {
+                "type": "text",
+                "name": "path",
+                "label": "对应路径",
+                "placeholder": "如：/menu",
+                "show": true,
+                "value": ""
+            },
+            {
+                "type": "text",
+                "name": "content",
+                "label": "菜单描述",
+                "placeholder": "",
+                "show": true,
+                "value": ""
+            }, {
+                "type": "text",
+                "name": "component",
+                "label": "资源地址：",
+                "show": true,
+                "placeholder": "如：@/views/menuManage/index",
+                "value": "@/views/menuManage/index"
+            }, {
+                "type": "radio",
+                "name": "hidden",
+                "width": "80",
+                "disabled": false,
+                "label": "是否显示:",
+                "show": true,
+                "value": "",
+                "options": [{
+                    "id": "",
+                    "value": false,
+                    "label": "是",
+                    "name": "1"
+                }, {
+                    "id": "",
+                    "value": true,
+                    "label": "否",
+                    "name": "0"
+                }]
+            }
+        ],
+        "data": {
+            "id": "",
+            "title": "",
+            "path": "",
+            "parentid": "0",
+            "content": "",
+            "sortnum": "1",
+            "component": "",
+            "icon": "",
+            "hidden": false
+        }
+    },
+    "messageAudit": {
+        "item": [{
+            "type": "radio",
+            "name": "status",
+            "value": "",
+            "width": "80",
+            "disabled": false,
+            "label": "该游客留言是否审核通过:",
+            "show": true,
+            "options": [{
+                "id": "",
+                "value": "1",
+                "label": "是",
+                "name": "1"
+            }, {
+                "id": "",
+                "value": "0",
+                "label": "否",
+                "name": "0"
+            }]
+        }],
+        "data": {
+            "status": ""
+        }
+    },
+    "messageReplyAudit": {
+        "item": [{
+            "type": "input",
+            "name": "content",
+            "width": "80",
+            "disabled": "true",
+            "label": "留言内容:",
+            "show": true,
+            "value": ""
+        },{
+            "type": "textarea",
+            "name": "replyMessage",
+            "width": "80",
+            "disabled": false,
+            "label": "回复内容:",
+            "show": true,
+            "value": ""
+        }],
+        "data": {
+            "replyMessage": ""
+        }
+    },
+    "testLibary": {
+        "item": [{
+                "type": "text",
+                "name": "name",
+                "value": "",
+                "width": "80",
+                "disabled": false,
+                "label": "题库名称",
+                "show": true
+            }
+
+        ],
+        "data": {
+            "name": "",
+            "libraryid": "",
+            "imgPath": ""
+        }
+    },
+    "roles": {
+        "item": [{
+                "type": "text",
+                "name": "name",
+                "placeholder": "请输入角色名",
+                "value": "",
+                "width": "80",
+                "label": "角色名:",
+                "show": true,
+                "rules": [{
+                    "required": true,
+                    "message": "请输入角色名",
+                    "trigger": "blur"
+                }]
+            },
+            {
+                "type": "text",
+                "name": "keyword",
+                "placeholder": "请输入关键字",
+                "value": "",
+                "width": "80",
+                "label": "关键字:",
+                "show": true,
+                "rules": [{
+                    "required": true,
+                    "message": "请输入关键字",
+                    "trigger": "blur"
+                }]
+            },
+            {
+                "type": "text",
+                "name": "remark",
+                "placeholder": "请输入备注",
+                "value": "",
+                "width": "80",
+                "label": "备注:",
+                "show": true,
+                "rules": [{
+                    "required": false,
+                    "message": "请输入备注",
+                    "trigger": "blur"
+                }]
+            }
+        ],
+        "data": {
+            "id": "",
+            "name": "",
+            "keyword": "",
+            "remark": "",
+            "rights": []
+        }
+    },
+    "videoSetting": {
+        "item": [{
+                "type": "inputNum",
+                "name": "redFlowerPerMinute",
+                "placeholder": "请输入观看视频每分钟获取的小红旗数量：",
+                "value": "",
+                "width": "80",
+                "label": "观看视频每分钟获取的小红旗数量：",
+                "show": true,
+                "min": 0,
+                "max": 10,
+                "step": 1,
+                "precision": 2,
+                "rules": [{
+                    "required": true,
+                    "message": "请输入观看视频每分钟获取的小红旗数量",
+                    "trigger": "blur"
+                }]
+            },
+            {
+                "type": "inputNum",
+                "name": "videoRatio",
+                "placeholder": "请输入视频比率",
+                "value": "",
+                "width": "80",
+                "min": 0,
+                "max": 10,
+                "step": 1,
+                "precision": 2,
+                "label": "视频比率：",
+                "show": true,
+                "rules": [{
+                    "required": true,
+                    "message": "请输入视频比率",
+                    "trigger": "blur"
+                }]
+            }
+        ],
+        "data": {
+            "redFlowerPerMinute": "",
+            "videoRatio": ""
+        }
+    },
+    "testSetting": {
+        "item": [{
+                "type": "inputNum",
+                "name": "redFlowerPerTest",
+                "placeholder": "每答对一个题目获取的小红旗数量",
+                "value": "",
+                "width": "80",
+                "label": "每答对一个题目获取的小红旗数量：",
+                "show": true,
+                "min": 0,
+                "max": 10,
+                "step": 1,
+                "precision": 2,
+                "rules": [{
+                    "required": true,
+                    "message": "请输入每答对一个题目获取的小红旗数量",
+                    "trigger": "blur"
+                }]
+            },
+            {
+                "type": "inputNum",
+                "name": "testRatio",
+                "placeholder": "请输入试题比率",
+                "value": "",
+                "width": "80",
+                "label": "试题比率:",
+                "min": 0,
+                "max": 10,
+                "step": 1,
+                "precision": 2,
+                "show": true,
+                "rules": [{
+                    "required": true,
+                    "message": "请输入试题比率",
+                    "trigger": "blur"
+                }]
+            }
+        ],
+        "data": {
+            "redFlowerPerTest": "",
+            "testRatio": ""
+        }
+    },
+    "rights": {
+        "item": [{
+                "type": "text",
+                "name": "name",
+                "placeholder": "请输入权限名",
+                "value": "",
+                "width": "80",
+                "label": "权限名:",
+                "show": true,
+                "rules": [{
+                    "required": true,
+                    "message": "请输入权限名",
+                    "trigger": "blur"
+                }]
+            },
+            {
+                "type": "text",
+                "name": "keyword",
+                "placeholder": "请输入关键字",
+                "value": "",
+                "width": "80",
+                "label": "关键字:",
+                "show": true,
+                "rules": [{
+                    "required": true,
+                    "message": "请输入关键字",
+                    "trigger": "blur"
+                }]
+            },
+            {
+                "type": "text",
+                "name": "remark",
+                "placeholder": "请输入备注",
+                "value": "",
+                "width": "80",
+                "label": "备注:",
+                "show": true,
+                "rules": [{
+                    "required": false,
+                    "message": "请输入备注",
+                    "trigger": "blur"
+                }]
+            }
+        ],
+        "data": {
+            "id": "",
+            "name": "",
+            "keyword": "",
+            "remark": ""
+        }
+    },
+    "link": {
+        "item": [{
+                "type": "text",
+                "name": "linkName",
+                "value": "",
+                "placeholder": "请输入链接名称",
+                "width": "100%",
+                "label": "链接名称:",
+                "show": true,
+                "rules": [{
+                    "required": true,
+                    "message": "请输入链接名称",
+                    "trigger": "blur"
+                }]
+            },
+            {
+                "type": "text",
+                "name": "linkUrl",
+                "value": "",
+                "placeholder": "请输入链接地址",
+                "width": "100%",
+                "label": "链接地址:",
+                "show": true,
+                "rules": [{
+                    "required": true,
+                    "message": "请输入链接地址",
+                    "trigger": "blur"
+                }]
+            }
+        ],
+        "data": {
+            "id": "",
+            "linkName": "",
+            "linkUrl": "",
+            "updateTime": ""
+        }
+    },
+    "file": {
+        "item": [{
+                "type": "select",
+                "name": "type",
+                "cname": "name",
+                "value": "",
+                "placeholder": "请选择文件类型",
+                "filterable": true,
+                "width": "100%",
+                "label": "文件类型:",
+                "show": true,
+                "options": [{
+                        "id": 1,
+                        "name": "TCU标定文件"
+                    },
+                    {
+                        "id": 4,
+                        "name": "TCU配置文件"
+                    }
+                ],
+                "rules": [{
+                    "required": true,
+                    "message": "请选择文件类型",
+                    "trigger": "blur"
+                }]
+            },
+            {
+                "type": "text",
+                "name": "remark",
+                "placeholder": "请輸入文件说明",
+                "value": "",
+                "label": "文件说明",
+                "disabled": true,
+                "show": true,
+                "rules": [{
+                    "required": false,
+                    "message": "文件说明不能为空",
+                    "trigger": "blur"
+                }]
+            },
+            {
+                "type": "file",
+                "name": "file",
+                "value": "",
+                "placeholder": "请选择文件",
+                "filterable": true,
+                "width": "100%",
+                "label": "选择文件:",
+                "show": true,
+                "rules": [{
+                    "required": false,
+                    "message": "请选择文件",
+                    "trigger": "blur"
+                }]
+            }
+        ],
+        "data": {
+            "type": "",
+            "remark": ""
+        }
+    }
+}
